@@ -90,7 +90,7 @@ Specified in [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 - For Ed25519, SHA-512 shall be used.
 - For Ed448, SHAKE256 (as specified in FIPS 202) shall be used.
 
-## 4. Key Management and Establishment Algorithms
+## 4. Key Exchange and Key Establishment Algorithms
 ### RSA Key Exchange 🟢
 - Defined in SP [800-56B rev.2](https://doi.org/10.6028/NIST.SP.800-56Br2)
 ### Diffie-Hellman (DH) 🟢
