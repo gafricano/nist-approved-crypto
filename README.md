@@ -79,12 +79,22 @@ Specified in [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 ### Digital Signature Algorithm (DSA) 🔴
 - Standardized in the withdrawn [FIPS 186-4](https://doi.org/10.6028/NIST.FIPS.186-4).🔴
 - Superseded by [FIPS-186-5](https://doi.org/10.6028/NIST.FIPS.186-5) which declares DSA as not approved anymore.
+
 ### Elliptic Curve Digital Signature Algorithm (ECDSA) 🟢
 - Standardized in the withdrawn [FIPS 186-4](https://doi.org/10.6028/NIST.FIPS.186-4).
 - Superseded by [FIPS-186-5](https://doi.org/10.6028/NIST.FIPS.186-5)
+- A more secure and efficient alternative to RSA, based on elliptic curve cryptography.
+- Strongly recommended for digital signatures.
+- Key Sizes: Uses curves like P-256, P-384, and P-521.
+- Commonly used in secure messaging protocols, TLS certificates, and blockchain technology.
+
 ### RSA Digital Signature Scheme 🟢
 - Referenced in [FIPS-186-5](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf)
 - Based PKCS #1 v2.2 [RFC 8017](https://www.rfc-editor.org/rfc/rfc8017)
+- Widely used and recommended.
+- Key Sizes: Minimum 2048 bits.
+- Commonly used in X.509 certificates, code signing, and document signing.
+  
 ### Edwards-Curve Digital Signature Algorithm (EdDSA)
 - Based on [FIPS-186-5](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf)
 - For Ed25519, SHA-512 shall be used.
@@ -93,10 +103,24 @@ Specified in [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 ## 4. Key Exchange and Key Establishment Algorithms
 ### RSA Key Exchange 🟢
 - Defined in SP [800-56B rev.2](https://doi.org/10.6028/NIST.SP.800-56Br2)
+- Uses the RSA algorithm for key establishment.
+- RSA is still widely used, but it is being phased out in favour of more efficient alternatives like ECDH.
+- Notes: The minimum recommended RSA key size is 2048 bits for modern systems.
+
 ### Diffie-Hellman (DH) 🟢
 - Defined in [SP 800-56A rev.3](https://doi.org/10.6028/NIST.SP.800-56Ar3).
+- A widely used method for secure key exchange over an insecure channel.
+- Recommended for secure key exchange.
+- Ephemeral DH (DHE) is preferred for forward secrecy.
+  -Variants: 
+  - Ephemeral DH (DHE)
+  - Static DH (less secure)
+ 
 ### Elliptic Curve Diffie-Hellman (ECDH) 🟢
 - Defined in [SP 800-56A rev.3](https://doi.org/10.6028/NIST.SP.800-56Ar3).
+- An optimized version of Diffie-Hellman using elliptic curves, which provides stronger security with smaller key sizes.
+- Strongly recommended over standard DH.
+- Often used in TLS for perfect forward secrecy (PFS).
 
 ## 5. Message Authentication Codes (MACs)
 ### HMAC (Hash-Based Message Authentication Code) 🟢
@@ -119,7 +143,15 @@ Specified in [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 - Based on cryptographic hash functions, block ciphers, or elliptic curves.
 - Defined in [SP 800-90A rev.1](https://doi.org/10.6028/NIST.SP.800-90Ar1).
 
-## 8. Other Notable Cryptographic Functions
+## 8. Post-Quantum Algorithms (PQCs_
+- NIST Reference: NIST PQC Standardization (Ongoing).
+- Status: In development, with final selections expected soon.
+- Post-Quantum Candidates (as of 2024):
+  - CRYSTALS-Kyber (Key Exchange)
+  - CRYSTALS-Dilithium (Digital Signatures)
+  - FALCON (Digital Signatures)
+  - SPHINCS+ (Digital Signatures)
+- Security Note: These algorithms are designed to be resistant to attacks from quantum computers.
 
 ## Other References
 An interesting page to follow up with document revisions is here: [Crypto Publication Review Project](https://csrc.nist.gov/Projects/crypto-publication-review-project)
