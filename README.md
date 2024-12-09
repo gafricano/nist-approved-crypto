@@ -144,13 +144,25 @@ Specified in [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 - Defined in [SP 800-90A rev.1](https://doi.org/10.6028/NIST.SP.800-90Ar1).
 
 ## 8. Post-Quantum Algorithms (PQCs) 🟡
-- NIST Reference: NIST PQC Standardization (Ongoing).
-- Status: In development, with final selections expected soon.
-- Post-Quantum Candidates (as of 2024):
-  - CRYSTALS-Kyber (Key Exchange)
-  - CRYSTALS-Dilithium (Digital Signatures)
-  - FALCON (Digital Signatures)
-  - SPHINCS+ (Digital Signatures)
+- Final version of [FIPS-203](https://csrc.nist.gov/pubs/fips/203/final) 🟢
+  - Specifies a cryptographic scheme called the Module-Lattice-Based Key-Encapsulation Mechanism Standard
+  - Derived from **CRYSTALS-KYBER** submission
+  - A key encapsulation mechanism (KEM) is a particular type of key establishment scheme that can be used to establish a shared secret key between two parties communicating over a public channel
+  - Current NIST-approved key establishment schemes are specified in NIST Special Publication (SP) 800-56A.
+ 
+- Final version of [FIPS-204](https://csrc.nist.gov/pubs/fips/204/final) 🟢
+  - Specifies digital signature schemes, which are used to detect unauthorized modifications to data and to authenticate the identity of the signatory.
+  - FIPS 204 specifies the Module-Lattice-Based Digital Signature Standard, which is derived from **CRYSTALS-Dilithium** submission
+  - Current NIST-approved digital signature schemes are specified in FIPS 186-5, Digital Signature Standard, and [SP 800-208](https://doi.org/10.6028/NIST.SP.800-208).
+
+- Final version of [FIPS-205](https://csrc.nist.gov/pubs/fips/205/final) 🟢
+  - Specifies digital signature schemes, which are used to detect unauthorized modifications to data and to authenticate the identity of the signatory.
+  - FIPS 205 specifies the Stateless Hash-Based Digital Signature Standard, which is derived from the **SPHINCS+** submission.
+  - Current NIST-approved digital signature schemes are specified in FIPS 186-5, Digital Signature Standard, and [SP 800-208](https://doi.org/10.6028/NIST.SP.800-208)
+
+- FIPS-2XX 🟡
+  - NIST is also developing a FIPS that specifies a digital signature algorithm derived from **FALCON** as an additional alternative to these standards.
+
 - Security Note: These algorithms are designed to be resistant to attacks from quantum computers.
 
 ## Other References
