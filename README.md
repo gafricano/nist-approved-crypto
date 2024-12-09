@@ -51,8 +51,6 @@ Historically this symmetric key algorithm applies the DES cipher algorithm three
 - CFB: Supports streaming-encryption.
 - OFB: Ensures deterministic outputs.
 
-#### Modes Deprecated or not recommended
-See [NIST Withdraw Note](https://csrc.nist.gov/news/2023/nist-to-withdraw-sp-800-67-rev-2).
 
 
 ## 2. Hash Functions:
