@@ -1,16 +1,23 @@
 # Comprehensive List of NIST-Approved (& retrired) Cryptographic Algorithms
 
-#### Last update: 09/Dec/2024
+## Last update: 
+### 09/Dec/2024
 
+## Motivation
 Since I found it hard to have a single place with a list of NIST-Approved Cryptographic Algorithms and Operations Modes I made this list to facilitate my own life or for someone else too. 
 
-An interesting page to follow up with document revisions is here: [Crypto Publication Review Project](https://csrc.nist.gov/Projects/crypto-publication-review-project)
+## How to use this list?
+  1. Use it at your discretion
+  2. If you want to add/correct/contribute feel free!
+  3. Check the traffic semaphore
 
-Use it at your discretion, if you want to add/correct/contribute feel free! 
+## Semaphore Explanation
+🟢 -> Still ok to use  
+🟡 -> Some attention is required, i.e. revision underway, withdrawn warning. Check the comments or links  
+🔴 -> Not authorized to use  
 
 
-
-## 1. Symmetric Encryption Algorithms and Modes of Operation 
+## 1. Symmetric Encryption Algorithms 
 ### Advanced Encryption Standard (AES) :green_circle:
 A symmetric key algorithm standardized in [FIPS 197](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf) 
 Supported key sizes:
@@ -19,7 +26,7 @@ Supported key sizes:
 - 256 bits
   
 #### Modes of Operation:
-- Cipher Block Chaining (CBC): Recommended when used with proper padding. :orange_circle:
+- Cipher Block Chaining (CBC): Recommended when used with proper padding. 🟡
 - Counter (CTR): Converts block ciphers into stream ciphers.
 - Galois/Counter Mode (GCM): Provides authenticated encryption.
 - Cipher Feedback (CFB): Supports variable block sizes.
@@ -115,3 +122,7 @@ Specified in [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 - Defined in [SP 800-90A rev.1](https://doi.org/10.6028/NIST.SP.800-90Ar1).
 
 ## 8. Other Notable Cryptographic Functions
+
+## Other References
+An interesting page to follow up with document revisions is here: [Crypto Publication Review Project](https://csrc.nist.gov/Projects/crypto-publication-review-project)
+
