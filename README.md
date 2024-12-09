@@ -1,11 +1,17 @@
 # Comprehensive List of NIST-Approved Cryptographic Algorithms and Modes of Operation
-Since I found it hard to have a single place with a list of NIST-Approved Cryptographic Algorithms and Operations Modes I made this list to facilitate my own life or for someone else too. An interesting page to follow up with document revisions is here [Crypto Publication Review Project](https://csrc.nist.gov/Projects/crypto-publication-review-project)
 
-Last update: 09/Dec/2024
+#### Last update: 09/Dec/2024
+
+Since I found it hard to have a single place with a list of NIST-Approved Cryptographic Algorithms and Operations Modes I made this list to facilitate my own life or for someone else too. 
+
+An interesting page to follow up with document revisions is here: [Crypto Publication Review Project](https://csrc.nist.gov/Projects/crypto-publication-review-project)
+
+Use it at your discretion, if you want to add/correct/contribute feel free! 
+
 
 
 ## 1. Symmetric Encryption Algorithms and Modes of Operation 
-### Advanced Encryption Standard (AES) :green_circle: : 
+### Advanced Encryption Standard (AES) :green_circle:
 A symmetric key algorithm standardized in [FIPS 197](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf) 
 Supported key sizes:
 - 128 bits
