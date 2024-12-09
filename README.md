@@ -95,7 +95,7 @@ Specified in [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 - Key Sizes: Minimum 2048 bits.
 - Commonly used in X.509 certificates, code signing, and document signing.
   
-### Edwards-Curve Digital Signature Algorithm (EdDSA)
+### Edwards-Curve Digital Signature Algorithm (EdDSA) 🟢
 - Based on [FIPS-186-5](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf)
 - For Ed25519, SHA-512 shall be used.
 - For Ed448, SHAKE256 (as specified in FIPS 202) shall be used.
@@ -143,7 +143,7 @@ Specified in [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 - Based on cryptographic hash functions, block ciphers, or elliptic curves.
 - Defined in [SP 800-90A rev.1](https://doi.org/10.6028/NIST.SP.800-90Ar1).
 
-## 8. Post-Quantum Algorithms (PQCs_
+## 8. Post-Quantum Algorithms (PQCs) 🟡
 - NIST Reference: NIST PQC Standardization (Ongoing).
 - Status: In development, with final selections expected soon.
 - Post-Quantum Candidates (as of 2024):
