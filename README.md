@@ -1,7 +1,6 @@
 # Comprehensive List of NIST-Approved (& retrired) Cryptographic Algorithms
 
-## Last update: 
-### 09/Dec/2024
+## Last updated: 11/Dec/2024
 
 ## Motivation
 Since I found it hard to have a single place with a list of NIST-Approved Cryptographic Algorithms and Operations Modes I made this list to facilitate my own life or for someone else too. 
