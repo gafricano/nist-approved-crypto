@@ -1,4 +1,4 @@
-# Comprehensive List of NIST-Approved (& retrired) Cryptographic Algorithms
+# Comprehensive List of NIST-Approved (&retrired) Cryptographic Algorithms
 
 ## Last updated: 11/Dec/2024
 
